@@ -2,7 +2,7 @@
 
 An AI-powered prior authorization assistant that helps doctors generate strong medical necessity justifications and predicts approval likelihood before submission.
 
-![Demo](./demo.gif)
+<!-- ![Demo](./demo.gif) -->
 
 ---
 
