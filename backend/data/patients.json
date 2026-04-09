@@ -1,0 +1,354 @@
+[
+  {
+    "id": "P001",
+    "first_name": "Margaret",
+    "last_name": "Chen",
+    "date_of_birth": "1966-03-15",
+    "age": 58,
+    "gender": "Female",
+    "insurance": {
+      "payer": "Blue Cross Blue Shield",
+      "plan": "PPO Gold",
+      "member_id": "BCBS-889421567",
+      "group_number": "GRP-44521"
+    },
+    "problem_list": [
+      {
+        "icd10_code": "M17.11",
+        "description": "Primary osteoarthritis, right knee",
+        "date_diagnosed": "2024-09-15",
+        "status": "active"
+      },
+      {
+        "icd10_code": "E11.9",
+        "description": "Type 2 diabetes mellitus without complications",
+        "date_diagnosed": "2020-06-10",
+        "status": "active"
+      },
+      {
+        "icd10_code": "I10",
+        "description": "Essential (primary) hypertension",
+        "date_diagnosed": "2019-03-22",
+        "status": "active"
+      }
+    ],
+    "medications": [
+      {
+        "name": "Ibuprofen",
+        "dosage": "800mg",
+        "frequency": "TID",
+        "start_date": "2025-01-15",
+        "end_date": "2025-07-10",
+        "status": "discontinued",
+        "reason_discontinued": "GI side effects, inadequate pain relief"
+      },
+      {
+        "name": "Meloxicam",
+        "dosage": "15mg",
+        "frequency": "Daily",
+        "start_date": "2025-07-10",
+        "end_date": "2025-11-15",
+        "status": "discontinued",
+        "reason_discontinued": "Insufficient pain control, elevated liver enzymes on follow-up labs"
+      },
+      {
+        "name": "Acetaminophen",
+        "dosage": "1000mg",
+        "frequency": "TID",
+        "start_date": "2025-11-15",
+        "end_date": null,
+        "status": "active",
+        "reason_discontinued": null
+      },
+      {
+        "name": "Metformin",
+        "dosage": "1000mg",
+        "frequency": "BID",
+        "start_date": "2020-07-01",
+        "end_date": null,
+        "status": "active",
+        "reason_discontinued": null
+      },
+      {
+        "name": "Lisinopril",
+        "dosage": "20mg",
+        "frequency": "Daily",
+        "start_date": "2019-04-10",
+        "end_date": null,
+        "status": "active",
+        "reason_discontinued": null
+      }
+    ],
+    "encounters": [
+      {
+        "date": "2025-01-15",
+        "provider": "Dr. Sarah Mitchell",
+        "type": "Office Visit",
+        "reason": "Worsening right knee pain",
+        "soap_note": {
+          "subjective": "Patient reports worsening right knee pain over the past 4 months. Pain is 5/10 at rest, 7/10 with activity. Difficulty climbing stairs and walking more than 2 blocks. Has been using OTC ibuprofen with minimal improvement.",
+          "objective": "Right knee: mild effusion noted. ROM flexion limited to 110 degrees (normal 135). Crepitus on flexion/extension. Varus alignment observed. BMI 29.2. Vitals stable.",
+          "assessment": "Right knee osteoarthritis, moderate severity. Symptoms affecting daily activities and mobility.",
+          "plan": "Start prescription ibuprofen 800mg TID with food. Refer to physical therapy 2x/week for 8 weeks. Follow up in 3 months. Discussed weight management."
+        }
+      },
+      {
+        "date": "2025-07-10",
+        "provider": "Dr. Sarah Mitchell",
+        "type": "Follow-up",
+        "reason": "Right knee pain follow-up after PT",
+        "soap_note": {
+          "subjective": "Completed 8 weeks of physical therapy (16 sessions). Reports some improvement in stability but pain persists at 6/10 with activity. Unable to walk more than 1 block without significant pain. Cannot perform squatting or kneeling required for gardening — reports this significantly impacts quality of life. Reports GI discomfort from ibuprofen.",
+          "objective": "Right knee: moderate effusion. ROM flexion 105 degrees (worsened from 110). Positive McMurray test. Tenderness along medial joint line. Physical therapy notes reviewed — showed initial improvement weeks 1-4, plateau weeks 5-8.",
+          "assessment": "Progressive right knee OA with failed conservative NSAID therapy and plateaued physical therapy response. Functional decline noted.",
+          "plan": "Discontinue ibuprofen due to GI side effects. Start meloxicam 15mg daily. Order right knee X-ray. Continue home exercise program from PT. Follow up in 4 months."
+        }
+      },
+      {
+        "date": "2025-11-15",
+        "provider": "Dr. Sarah Mitchell",
+        "type": "Follow-up",
+        "reason": "Right knee pain — progressive symptoms",
+        "soap_note": {
+          "subjective": "Pain now 7/10 with any weight-bearing activity. Reports knee 'gives way' occasionally. Cannot walk to mailbox without stopping. Sleep disrupted 3-4 nights per week due to pain. Has stopped all recreational activities including gardening and walking group. Reports feeling isolated due to limited mobility.",
+          "objective": "Right knee: moderate-to-large effusion. ROM flexion 95 degrees. Valgus stress test positive for medial laxity. Antalgic gait pattern observed. X-ray results reviewed (see imaging).",
+          "assessment": "Advanced right knee OA with progressive functional decline despite 6 months of conservative management including NSAIDs (2 agents failed), physical therapy (completed protocol), and activity modification. X-ray confirms bone-on-bone changes in medial compartment. Current status significantly impacts ADLs and quality of life.",
+          "plan": "Discontinue meloxicam — liver enzymes mildly elevated on recent labs. Start acetaminophen 1000mg TID. Corticosteroid injection today (triamcinolone 40mg intra-articular). Order MRI right knee for surgical planning. Refer to orthopedic surgery. Follow up in 6 weeks."
+        }
+      },
+      {
+        "date": "2026-01-15",
+        "provider": "Dr. Sarah Mitchell",
+        "type": "Follow-up",
+        "reason": "Right knee pain — post-injection follow-up",
+        "soap_note": {
+          "subjective": "Steroid injection provided approximately 3 weeks of relief, now pain has returned to 7-8/10. Acetaminophen provides minimal relief. Using a cane for all ambulation outside the home. Has not been able to drive comfortably for 2 weeks. Daughter now assists with grocery shopping and errands.",
+          "objective": "Right knee: large effusion. ROM flexion 90 degrees. Significant medial joint line tenderness. Antalgic gait even with cane. VAS pain score 8/10.",
+          "assessment": "Severe right knee OA with failed conservative management. Patient has exhausted non-surgical options including 2 NSAIDs, completed PT protocol, corticosteroid injection with only transient relief. Functional capacity severely impaired — unable to perform ADLs independently. MRI needed to assess meniscal and ligamentous status for surgical planning.",
+          "plan": "Prior authorization for MRI right knee. Urgency: routine but clinically significant. Continue current medications. Patient educated on surgical options pending MRI results."
+        }
+      }
+    ],
+    "lab_results": [
+      {
+        "test_name": "CBC",
+        "date": "2025-10-15",
+        "value": "Within normal limits",
+        "unit": "",
+        "reference_range": "Standard ranges",
+        "flag": null
+      },
+      {
+        "test_name": "ALT",
+        "date": "2025-11-10",
+        "value": "52",
+        "unit": "U/L",
+        "reference_range": "7-56",
+        "flag": null
+      },
+      {
+        "test_name": "AST",
+        "date": "2025-11-10",
+        "value": "48",
+        "unit": "U/L",
+        "reference_range": "10-40",
+        "flag": "High"
+      },
+      {
+        "test_name": "HbA1c",
+        "date": "2025-12-15",
+        "value": "6.8",
+        "unit": "%",
+        "reference_range": "<5.7",
+        "flag": "High"
+      },
+      {
+        "test_name": "ESR",
+        "date": "2025-11-10",
+        "value": "28",
+        "unit": "mm/hr",
+        "reference_range": "0-20",
+        "flag": "High"
+      },
+      {
+        "test_name": "CRP",
+        "date": "2025-11-10",
+        "value": "8.2",
+        "unit": "mg/L",
+        "reference_range": "<3.0",
+        "flag": "High"
+      }
+    ],
+    "imaging_results": [
+      {
+        "type": "X-ray",
+        "body_part": "Right Knee",
+        "date": "2025-11-10",
+        "findings": "Severe narrowing of the medial tibiofemoral compartment with near bone-on-bone contact. Osteophyte formation along the medial femoral condyle and tibial plateau. Subchondral sclerosis present. Mild patellofemoral compartment narrowing. No acute fracture or dislocation.",
+        "impression": "Advanced degenerative changes of the right knee, predominantly medial compartment, consistent with Kellgren-Lawrence Grade 4 osteoarthritis."
+      }
+    ],
+    "procedures_history": [
+      {
+        "name": "Corticosteroid Injection, Right Knee",
+        "cpt_code": "20611",
+        "date": "2025-11-15",
+        "provider": "Dr. Sarah Mitchell",
+        "outcome": "Triamcinolone 40mg. Patient tolerated well. Temporary relief for approximately 3 weeks."
+      },
+      {
+        "name": "Physical Therapy Evaluation + Treatment",
+        "cpt_code": "97161",
+        "date": "2025-01-15",
+        "provider": "Physical Therapy Department",
+        "outcome": "16 sessions completed over 8 weeks. Initial ROM improvement, plateau by week 5. Strengthening exercises tolerated but did not reduce pain scores."
+      }
+    ],
+    "allergies": ["Sulfonamides", "Latex"]
+  },
+  {
+    "id": "P002",
+    "first_name": "James",
+    "last_name": "Rodriguez",
+    "date_of_birth": "1992-08-22",
+    "age": 34,
+    "gender": "Male",
+    "insurance": {
+      "payer": "Aetna",
+      "plan": "HMO Standard",
+      "member_id": "AET-556789012",
+      "group_number": "GRP-78834"
+    },
+    "problem_list": [
+      {
+        "icd10_code": "M54.5",
+        "description": "Low back pain",
+        "date_diagnosed": "2025-12-20",
+        "status": "active"
+      },
+      {
+        "icd10_code": "F41.1",
+        "description": "Generalized anxiety disorder",
+        "date_diagnosed": "2023-05-15",
+        "status": "active"
+      }
+    ],
+    "medications": [
+      {
+        "name": "Cyclobenzaprine",
+        "dosage": "10mg",
+        "frequency": "At bedtime",
+        "start_date": "2025-12-20",
+        "end_date": null,
+        "status": "active",
+        "reason_discontinued": null
+      },
+      {
+        "name": "Naproxen",
+        "dosage": "500mg",
+        "frequency": "BID",
+        "start_date": "2025-12-20",
+        "end_date": null,
+        "status": "active",
+        "reason_discontinued": null
+      },
+      {
+        "name": "Sertraline",
+        "dosage": "100mg",
+        "frequency": "Daily",
+        "start_date": "2023-06-01",
+        "end_date": null,
+        "status": "active",
+        "reason_discontinued": null
+      }
+    ],
+    "encounters": [
+      {
+        "date": "2025-12-20",
+        "provider": "Dr. Robert Kim",
+        "type": "Office Visit",
+        "reason": "Lower back pain",
+        "soap_note": {
+          "subjective": "Patient reports lower back pain for approximately 6 weeks. Pain is 6/10, worse with prolonged sitting at work. Works as a software developer. Denies radiating pain, numbness, or tingling. No bowel/bladder changes. No recent trauma.",
+          "objective": "Lumbar spine: mild paraspinal muscle tenderness bilaterally. Straight leg raise negative bilaterally. Neurological exam intact — normal reflexes, sensation, and motor strength in lower extremities. ROM slightly limited in flexion. BMI 26.1.",
+          "assessment": "Acute low back pain, likely musculoskeletal. No red flag symptoms.",
+          "plan": "Start naproxen 500mg BID and cyclobenzaprine 10mg at bedtime. Refer to physical therapy. Activity modification — ergonomic assessment recommended for workstation. Follow up in 6 weeks."
+        }
+      },
+      {
+        "date": "2026-02-05",
+        "provider": "Dr. Robert Kim",
+        "type": "Follow-up",
+        "reason": "Lower back pain follow-up",
+        "soap_note": {
+          "subjective": "Completed 4 weeks of physical therapy (8 sessions). Pain improved slightly to 5/10 but still present daily. Still having difficulty sitting through full work day. Reports having to stand and walk around every 30-45 minutes. Medications helping somewhat.",
+          "objective": "Lumbar spine: tenderness reduced from initial visit. ROM improved slightly. Straight leg raise negative. Neuro exam normal. No new symptoms.",
+          "assessment": "Persistent low back pain with partial response to conservative treatment. Physical therapy showed some improvement but symptoms ongoing. No neurological deficits.",
+          "plan": "Continue current medications. Requesting lumbar MRI to evaluate for disc pathology or structural cause given persistent symptoms. Continue home exercises from PT."
+        }
+      }
+    ],
+    "lab_results": [
+      {
+        "test_name": "CBC",
+        "date": "2025-12-20",
+        "value": "Within normal limits",
+        "unit": "",
+        "reference_range": "Standard ranges",
+        "flag": null
+      }
+    ],
+    "imaging_results": [],
+    "procedures_history": [
+      {
+        "name": "Physical Therapy",
+        "cpt_code": "97110",
+        "date": "2025-12-27",
+        "provider": "Physical Therapy Department",
+        "outcome": "8 sessions over 4 weeks. Patient showed mild improvement in flexibility and core strength. Pain scores reduced from 6/10 to 5/10. Recommended continued therapy."
+      }
+    ],
+    "allergies": ["Penicillin"]
+  },
+  {
+    "id": "P003",
+    "first_name": "Tyler",
+    "last_name": "Washington",
+    "date_of_birth": "1998-01-10",
+    "age": 28,
+    "gender": "Male",
+    "insurance": {
+      "payer": "UnitedHealthcare",
+      "plan": "EPO Basic",
+      "member_id": "UHC-334567890",
+      "group_number": "GRP-12067"
+    },
+    "problem_list": [
+      {
+        "icd10_code": "R51.9",
+        "description": "Headache, unspecified",
+        "date_diagnosed": "2026-03-10",
+        "status": "active"
+      }
+    ],
+    "medications": [],
+    "encounters": [
+      {
+        "date": "2026-03-10",
+        "provider": "Dr. Lisa Park",
+        "type": "Office Visit",
+        "reason": "Headaches",
+        "soap_note": {
+          "subjective": "Patient reports headaches occurring 2-3 times per week for the past month. Describes them as 'pressure-like' across forehead. Rates pain as 4-5/10. Takes Tylenol occasionally which helps. No nausea, vomiting, or visual changes. No history of head trauma. Reports increased stress at work recently. Sleeps about 5-6 hours per night. Drinks 3-4 cups of coffee daily.",
+          "objective": "General appearance: well-appearing, no acute distress. Neurological exam: cranial nerves II-XII intact. Motor strength 5/5 all extremities. Sensory intact. Reflexes 2+ and symmetric. Fundoscopic exam: no papilledema. Vital signs within normal limits. BMI 24.5.",
+          "assessment": "Tension-type headaches, likely related to stress and poor sleep hygiene. No red flag symptoms. No neurological deficits.",
+          "plan": "Patient requesting brain MRI for reassurance. Discussed that clinical presentation is consistent with tension headaches and MRI is not indicated at this time per clinical guidelines. Patient insists on imaging. Submitting prior auth for brain MRI. Recommended: improve sleep hygiene, reduce caffeine intake, stress management, trial of OTC analgesics on a regular schedule. Follow up as needed."
+        }
+      }
+    ],
+    "lab_results": [],
+    "imaging_results": [],
+    "procedures_history": [],
+    "allergies": []
+  }
+]
